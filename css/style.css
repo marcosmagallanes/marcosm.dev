@@ -1,0 +1,78 @@
+* {
+    /* border: 1px solid darkorange; */
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    font-family: "Montserrat", sans-serif;
+
+    margin: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: lightgrey;
+}
+
+main {
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+    
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+        "content-column photo-column";
+}
+
+.content-column {
+    grid-area: content-column;
+    border-right: 4px dotted ghostwhite;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.content {
+    margin-right: 20px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+}
+
+.icon-container i {
+    margin: 10px;
+}
+
+.photo-column {
+    grid-area: photo-column;
+}
+
+.photo-column img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+
+    border-radius: 2%;
+}
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    font-size: smaller;
+}
