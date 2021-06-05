@@ -9,11 +9,10 @@ body {
 header {
     font-family: "Montserrat", sans-serif;
 
-    margin: 10px;
+    margin: 15px;
 
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 a {
@@ -27,24 +26,38 @@ a:hover {
 }
 
 main {
-    margin: 0 auto;
-    width: 90%;
+    width: auto;
     height: auto;
     
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-areas: 
-        "content-column photo-column";
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
-.content-column {
-    grid-area: content-column;
-    border-right: 4px dotted ghostwhite;
-    margin-right: 20px;
+.column {
     margin-bottom: 20px;
 }
 
-.content {
+.column img {
+    width: 90%;
+    height: auto;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 3%;
+}
+
+.content h2 {
+    margin-left: 15px;
+}
+
+.content p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.content li {
     margin-right: 20px;
 }
 
@@ -57,22 +70,10 @@ main {
     margin: 10px;
 }
 
-.photo-column {
-    grid-area: photo-column;
-}
-
-.photo-column img {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-
-    border-radius: 2%;
-}
-
 footer {
     text-align: center;
 }
 
 footer p {
-    font-size: smaller;
+    font-size: 0.75rem;
 }
