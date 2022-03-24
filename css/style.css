@@ -60,7 +60,8 @@ a {
 }
 
 a:hover {
-    color: lightgrey;
+    /* color: lightgrey; */
+    color: rgb(10, 112, 10);
 }
 
 
@@ -74,6 +75,7 @@ header {
 
 header h1 {
     margin: 0;
+    text-decoration: underline rgb(10, 112, 10);
 }
 
 header span {
@@ -108,6 +110,26 @@ header img {
 
 .icon-container i {
     font-size: 5rem;
+}
+
+/* Contact */
+
+form label {
+    font-size: 1rem;
+}
+
+form input,
+form textarea {
+    font-size: 1.85rem;
+    display: block;
+    width: 100%;
+    padding: 2%;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: 3px solid rgb(10, 112, 10);
+    border-radius: 0;
 }
 
 /* Footer Styles */
